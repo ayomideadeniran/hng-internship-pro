@@ -1,0 +1,293 @@
+.checkout-page {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #7E7E7E;
+}
+
+.product-summary {
+    flex: 1;
+    background-color: #DADADA;
+    padding: 20px;
+}
+
+.product-summary img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.product-details {
+    margin-top: 20px;
+    margin-left: -7rem;
+}
+
+.product-details h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-details h3 {
+    font-size: 16px;
+    color: #666;
+    margin-top: 0;
+}
+
+.reviews {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price-breakdown {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.price-breakdown div {
+    display: flex;
+    padding-right: 18rem;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.checkout-form {
+    flex: 1;
+    background-color: #DADADA;
+    padding: 20px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-header span {
+    font-weight: bold;
+}
+
+.form input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.name-fields,
+.city-state {
+    display: flex;
+    gap: 15px;
+}
+
+.name-fields input,
+.city-state input,
+.city-state select {
+    flex: 1;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.radio-group .background {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.radio-group label:has(input:checked) {
+    border-color: #000000;
+}
+
+.radio-group input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    outline: none;
+    margin: 0;
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: #444444;
+    background-color: #444444;
+    position: relative;
+}
+
+.radio-group input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.payment-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #444444;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.payment-icons img {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.secure-note {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.pay-button {
+    background-color: #52730D;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .checkout-page {
+        flex-direction: column;
+    }
+
+    .product-summary {
+        margin-bottom: 20px;
+    }
+
+    .name-fields,
+    .city-state {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .brand {
+        margin-left: -15rem;
+    }
+
+    .main-header {
+        padding-top: 1rem;
+    }
+
+    .navigation {
+        margin-top: -2rem;
+        margin-right: -12rem;
+    }
+}
+
+
+
+
+
+
+/* Header */
+
+
+
+@media (max-width: 768px) {
+    .header {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        padding: 1rem;
+    }
+
+    .navigation {
+        display: flex;
+        padding-right: 3rem;
+    }
+
+    /* .brand {} */
+
+
+    .navbar {
+        padding-top: 1rem;
+    }
+
+    .logo {
+        padding-left: 1rem;
+    }
+
+    .nav-items {
+        align-items: center;
+        margin-right: 2rem;
+    }
+
+    .nav-items a {
+        font-size: 14px;
+    }
+
+    .nav-items .contact {
+        display: none;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h2 {
+        font-weight: bold;
+        font-size: 70px;
+        font-family: 'InriaSans';
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .product-details {
+        padding-left: 9rem;
+    }
+
+    .price-breakdown span {
+        padding-right: 5rem;
+    }
+}

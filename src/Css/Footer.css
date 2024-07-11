@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    padding: 2rem;
+    margin-top: 10%;
+    background-color: #D7D3D3;
+    padding-left: 13rem;
+}
+
+.subscribe {
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.input-field {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-field button {
+    background-color: #595555;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: none;
+    margin-left: -3rem;
+}
+
+.input-field input {
+    color: black;
+    padding: 1rem;
+    background-color: #D7D3D3;
+    border: 1px solid #000000;
+    padding-left: 3.5rem;
+}
+
+.input-field button .material-symbols-outlined {
+    margin-right: 8px;
+}
+
+.subscribe h1 {
+    color: #454747;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-left: 1rem;
+    color: #454747;
+    gap: 5rem;
+}
+
+.list ul {
+    padding-top: 1rem;
+    list-style: none;
+}
+
+
+
+.icons {
+    padding-left: 32rem;
+    margin-top: -1.5rem;
+}
+
+.icons-list {
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+/* Mobile screen styles */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem;
+        margin-top: 10%;
+        background-color: #D7D3D3;
+    }
+
+    .subscribe {
+        margin-left: 0;
+        display: block;
+    }
+
+    .list {
+        display: block;
+        margin-left: 0;
+        padding: 0.5rem;
+        padding-top: 2rem;
+    }
+    .list li {
+        padding-top: 0.5rem;
+    }
+
+    .icons{
+        padding-left: 0;
+    }
+
+    .input-field {
+        display: block;
+        gap: 1rem;
+    }
+
+    .input-field button {
+        border: none;
+        padding-top: 1rem;
+        margin-left: 0;
+    }
+    .input-field input {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+    .subscribe h1 {
+        color: #454747;
+        font-size: 1.3rem;
+    }
+}
